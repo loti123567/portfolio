@@ -1,0 +1,508 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  align-items: center;
+  
+  justify-content: center;
+
+  color: #fff;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Container */
+.container {
+  display: flex;
+  height: 200vh;
+  transition: margin-left 0.3s ease;
+
+
+}
+
+/* Sidebar */
+.sidebar {
+  background: rgba(0,0,0,0.3);
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  box-shadow: 4px 0 15px rgba(0,0,0,0.2);
+  transition: width 0.3s ease, background 0.3s ease;
+  position: relative;
+  overflow: visible;
+  
+}
+.sidebar:hover {
+  background: rgba(0,0,0,0.5);
+}
+
+/* Toggle button */
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: #ff6f61;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 10;
+}
+.toggle-btn:hover {
+  color: #ffa08c;
+}
+
+/* Navigation */
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 30px;
+  margin-top: 50px;
+}
+
+/* Sidebar links */
+.sidebar nav a {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Icon before text using data-icon attribute */
+.sidebar nav a::before {
+  content: attr(data-icon);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover background animation */
+.sidebar nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: #ff6f61;
+  border-radius: 8px;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+.sidebar nav a:hover::after {
+  width: 100%;
+}
+.sidebar nav a:hover {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  transition: margin-left 0.3s ease;
+}
+
+/* Profile image */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #ff6f61;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(255,111,97,0.6);
+  margin-bottom: 900px;
+  transition: transform 0.4s ease;
+  overflow:auto;
+  position: absolute;
+  top: 129px; /* adjust as needed */
+  right: 35%;
+  left: 45%;
+  
+
+}
+.profile-pic:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+
+.about-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #ff6f61;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(255,111,97,0.6);
+   
+  transition: transform 0.4s ease;
+  
+  top: 30px; /* adjust as needed */
+  right: 40%;
+  
+  
+  overflow: visible;
+  
+
+}
+.about-pic:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+
+/* Name and tagline */
+.nado{
+  font-size: 3rem;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.4);
+  position:absolute;
+  top: 300px;
+}
+p.tagline {
+  font-size: 1.5rem;
+  color: #fdf8f7;
+  font-weight: 500;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+  position:absolute;
+  top: 380px;
+}
+
+/* Sidebar closed state */
+.sidebar.closed {
+  width: 70px;
+  background: rgba(0,0,0,0.4);
+}
+.sidebar.closed:hover {
+  background: rgba(0,0,0,0.6);
+}
+.sidebar.closed nav {
+  padding-left: 10px;
+  gap: 30px;
+  align-items: center;
+}
+.sidebar.closed nav a {
+  justify-content: center;
+  font-size: 0;
+  padding: 8px 0;
+  position: relative;
+}
+.sidebar.closed nav a::before {
+  opacity: 1;
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+.sidebar.closed nav a::after {
+  display: none;
+}
+.sidebar.closed nav a:hover {
+  font-weight: 600;
+  color: #ff6f61;
+}
+
+/* Adjust main content margin when sidebar closed */
+.container.sidebar-closed .main-content {
+  margin-left: 70px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    padding: 10px 0;
+    justify-content: center;
+    box-shadow: none;
+    background: rgba(0,0,0,0.6);
+    height: 60px;
+  }
+  .sidebar.closed {
+    width: 100%;
+  }
+  .sidebar nav {
+    flex-direction: row;
+    gap: 15px;
+    padding-left: 0;
+    margin-top: 0;
+    align-items: center;
+  }
+  .sidebar nav a {
+    padding: 6px 10px;
+    font-size: 1rem;
+    justify-content: center;
+  }
+  .sidebar nav a::before {
+    font-size: 1.2rem;
+  }
+  .sidebar nav a::after {
+    display: none;
+  }
+  .main-content {
+    padding: 20px;
+    margin-left: 0 !important;
+  }
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  p.tagline {
+    font-size: 1.2rem;
+  }
+  .toggle-btn {
+    top: 15px;
+    right: 15px;
+    font-size: 1.8rem;
+  }
+}
+
+
+/*contact page style*/
+.contact-section {
+  display: flex;
+  flex-direction: column;    /* stack children vertically */
+  align-items: center;       /* center horizontally */
+  gap: 50px;                 /* space between heading and icons */
+  padding: 40px 20px;
+  width: 80%;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+   animation: fadeInUp 2s forwards;
+}
+
+.icon svg {
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon:hover svg,
+.icon:focus svg {
+  transform: scale(1.25) rotate(-5deg);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+
+
+/*About me */
+h1{
+   animation: fadeInUp 2s forwards;
+   overflow:visible;
+}
+ h2 {
+
+  line-height: 1.2;
+   animation: fadeInUp 2s forwards;
+   
+}
+
+/*achievement*/
+
+
+#achievements {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.cabinet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px 0;
+}
+
+.frame {
+  background: #fffbe7;
+  border: 12px solid #bfa76f; /* gold/wood color */
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(60,40,10,0.25), 0 2px 4px rgba(0,0,0,0.08);
+  width: 400px;
+  padding: 18px 18px 12px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+  position: relative;
+  animation: fadeInUp 2s forwards; 
+}
+
+
+
+.frame img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  margin-bottom: 12px;
+  background: #eee;
+  
+}
+
+.plaque {
+  background: #e6d5a3;
+  color: #5a4a1b;
+  font-family: 'Georgia', serif;
+  font-size: 1.05rem;
+  padding: 6px 12px;
+  margin-top: 4px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(60,40,10,0.10);
+  width: 90%;
+  text-align: center;
+  
+}
+
+
+
+/*skills*/
+.skills-section {
+  width: 200%;
+  max-width: 900px;
+  /* Optional: add padding or box-sizing if needed */
+  box-sizing: border-box;
+  
+
+}
+
+/* Fade-in keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base skill card style */
+.skill-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 50px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: forwards;
+  animation-name: fadeInUp;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 300px;
+  margin-top: 50px;
+  margin-left: 50px;
+  
+}
+
+/* Staggered animation delays for each skill card */
+.skill-card:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.skill-card:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+.skill-card:nth-child(3) {
+  animation-delay: 1.6s;
+}
+
+/* Flex container for logo and projects */
+.skill-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 650px;
+}
+
+/* Logo styling */
+.skill-logo {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+/* Projects list styling */
+.projects-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+  color: #555;
+  flex: 1;
+  text-align: left;
+}
+
+.projects-list li {
+  margin-bottom: 8px;
+}
+
+.projects-list li a {
+  text-decoration: none;
+  color: #007acc;
+  transition: color 0.3s ease;
+}
+
+.projects-list li a:hover {
+  color: #005f99;
+  text-decoration: underline;
+}
+
+
+
+
+
+  
+
+
+
+

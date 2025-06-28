@@ -1,0 +1,103 @@
+<mxfile host="65bd71144e">
+    <diagram id="KghgxJheUcix_I2PBXYU" name="Page-1">
+        <mxGraphModel dx="662" dy="475" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;portfolio landing page&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;3d display&lt;/li&gt;&lt;li&gt;my name&lt;/li&gt;&lt;li&gt;software developer&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="10" width="260" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="endArrow=none;html=1;entryX=0.454;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="368" y="240" as="sourcePoint"/>
+                        <mxPoint x="330" y="190" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="370" y="240"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4" target="10">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="290" y="460" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4" target="13">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="390" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="890" y="540" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="4" target="25">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1083" y="540" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="&lt;b&gt;side bar&lt;/b&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;my name and profile pic&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;skills&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;website created&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;apps created&amp;nbsp;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;achievement&amp;nbsp;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;about me&amp;nbsp;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;contact&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="230" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="endArrow=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="170" y="450" as="sourcePoint"/>
+                        <mxPoint x="360" y="450" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="130" y="470"/>
+                            <mxPoint x="170" y="450"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="&lt;b&gt;&lt;u&gt;skills&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;logo of html ,css,javascript, react,and python&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;after then logo for each code show the small project you did&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="470" width="170" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="470" width="150" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;b&gt;&lt;u&gt;website created&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;hamburger menu&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="558" width="160" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="550" width="260" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;b&gt;&lt;u&gt;App created&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 9px; background-color: transparent;&quot;&gt;am not going to put anything here ,but an animation of a person&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; font-size: 9px;&quot;&gt;saying construction in progress come next time&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="615" width="280" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="700" y="550" as="sourcePoint"/>
+                        <mxPoint x="440" y="410" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="500" y="440"/>
+                            <mxPoint x="440" y="410"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="320" width="200" height="200" as="geometry">
+                        <mxRectangle x="340" y="320" width="50" height="40" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="550" width="205" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="&lt;b&gt;&lt;u&gt;achievement&lt;/u&gt;&lt;/b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;show a 3d room with cabbinet&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;with a fire place to show your&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;certificate or achievement anytime&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;they click or put thier mouse on it&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="18">
+                    <mxGeometry x="-5" y="8" width="210" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;b&gt;&lt;u&gt;about me&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;construct and edit&amp;nbsp; something about me ,use ai&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;and add a profile pic at the top&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="830" y="550" width="140" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="1075" y="510" width="200" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="contact" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="1130" y="518" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="they can contact me either&amp;nbsp;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;by email or linkden&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="1065" y="533" width="170" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
